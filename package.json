@@ -1,0 +1,19 @@
+{
+  "name": "store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paladin00-code/store.git"
+  },
+  "author": "Alexandr Ponomarskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paladin00-code/store/issues"
+  },
+  "homepage": "https://github.com/Paladin00-code/store#readme"
+}
