@@ -1,25 +1,29 @@
 {
-  "name": "store",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index",
-    "dev": "nodemon index"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Paladin00-code/store.git"
-  },
-  "author": "Alexandr Ponomarskiy",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Paladin00-code/store/issues"
-  },
-  "homepage": "https://github.com/Paladin00-code/store#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "mysql2": "^2.2.5",
-    "nodemon": "^2.0.6"
-  }
+	"name": "store",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index",
+		"server": "nodemon index"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Paladin00-code/store.git"
+	},
+	"author": "Alexandr Ponomarskiy",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Paladin00-code/store/issues"
+	},
+	"homepage": "https://github.com/Paladin00-code/store#readme",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"mongoose": "^5.11.10",
+		"morgan": "^1.10.0",
+		"mysql2": "^2.2.5",
+		"nodemon": "^2.0.6"
+	}
 }
