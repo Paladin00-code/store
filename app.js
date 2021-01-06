@@ -2,7 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors'); //для обработки запросов с других доменов
-// const morgan = require('morgan'); //красиво логирует запросы
+// const morgan = require('morgan'); //красиво логирует запросы (подключен ниже)
+const passport = require('passport');
 const authRoutes = require('./routes/auth');
 const analyticsRoutes = require('./routes/analytics');
 const categoryRoutes = require('./routes/category');
@@ -19,6 +20,9 @@ mongoose
 	})
 	.then(() => console.log('MongoDb connected'))
 	.catch((error) => console.log(error));
+
+app.use(passport.initialize());
+require('./middleware/passport')(passport);
 
 app.use(require('morgan')('dev'));
 app.use(cors());
