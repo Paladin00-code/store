@@ -1,8 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const cors = require('cors'); //для обработки запросов с других доменов
-// const morgan = require('morgan'); //красиво логирует запросы (подключен ниже)
+const cors = require('cors'); 
+// const morgan = require('morgan'); 
 const passport = require('passport');
 const authRoutes = require('./routes/auth');
 const analyticsRoutes = require('./routes/analytics');
