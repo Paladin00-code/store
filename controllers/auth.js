@@ -6,7 +6,6 @@ const User = require('../models/User');
 module.exports.login = async function(req, res) {
 	const candidate = await User.findOne({ email: req.body.email });
 	if (candidate) {
-		//Проверка. пользователь существует
 		const passwordResult = bcrypt.compareSync(req.body.password, candidate.password);
 		if (passwordResult) {
 			const token = jwt.sign(
@@ -38,7 +37,6 @@ module.exports.login = async function(req, res) {
 module.exports.register = async function(req, res) {
 	const candidate = await User.findOne({ email: req.body.email });
 	if (candidate) {
-		//пользователь существует, отправить ошибку
 		res.status(409).json({
 			massage: 'Такой email уже занят. Используте другой'
 		});
